@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario de registro</title>
+</head>
+<body>
+    <form id="registroForm">
+        <fieldset>
+            <legend>Informacion personal</legend>
+            <div class="form-group">
+                <label for="nombre">Nombre completo</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre completo" required >
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="email">correo electronico</label>
+                <input type="email" id="email" name="email" placeholder="ingrese su correo electronico" required>
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="password">ingrese una contraseña</label>
+                <input type="password" id="password" aria-describedby="pwd-help" minlength="8" placeholder="ingrese la contraseña" required>
+                <span id="pwd-help">La contraseña debe de tener almenos 8 caracteres</span>
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="confirmPassword">Confirmar Contraseña:</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" required>
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="fechaNacimiento">Fecha de Nacimiento:</label>
+                <input type="date" id="fechaNacimiento" name="fechaNacimiento" required>
+            </div>
+            <br>
+            <div class="form-group">
+                <label>Género:</label>
+                <input type="radio" id="masculino" name="genero" value="Masculino" required>
+                <label for="masculino">Masculino</label>
+                <input type="radio" id="femenino" name="genero" value="Femenino">
+                <label for="femenino">Femenino</label>
+                <input type="radio" id="otro" name="genero" value="Otro">
+                <label for="otro">Otro</label>
+            </div>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Preferencias</legend>
+        <br>
+            <div class="form-group">
+                <label>Intereses:</label>
+                <input type="checkbox" id="deportes" name="intereses" value="Deportes">
+                <label for="deportes">Deportes</label>
+                <input type="checkbox" id="musica" name="intereses" value="Música">
+                <label for="musica">Música</label>
+                <input type="checkbox" id="tecnologia" name="intereses" value="Tecnología">
+                <label for="tecnologia">Tecnología</label>
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="pais">País:</label>
+                <select id="pais" name="pais">
+                    <option value="">Seleccione su país</option>
+                    <option value="Colombia">Colombia</option>
+                    <option value="México">México</option>
+                    <option value="Argentina">Argentina</option>
+                    <option value="España">España</option>
+                </select>
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="biografia">Biografía:</label>
+                <textarea id="biografia" name="biografia" rows="4"></textarea>
+            </div>
+        </fieldset>
+        <br>
+        <button type="submit">Registrarse</button>
+    </form>
+</body>
+</html>
